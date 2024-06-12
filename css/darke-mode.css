@@ -1,0 +1,38 @@
+body:has(.nav-icon input:checked) {
+  --color-default: #fff;
+  --primary-hue: 35;
+  --primary-sat: 72%;
+  --primary-lightness: 44%;
+
+  --primary-color: hsl(
+    var(--primary-hue),
+    var(--primary-sat),
+    var(--primary-lightness)
+  );
+
+  --secondary-color: #fff;
+  --third-color: #9f9f9f;
+
+  --light-hue: 0;
+  --light-sat: 0%;
+  --light-lightness: 9%;
+  --light-color: hsl(
+    var(--light-hue),
+    var(--light-sat),
+    var(--light-lightness)
+  );
+
+  --light-gray-color: #252525;
+
+  .nav-icon .fa-moon {
+    display: none;
+  }
+  .nav-icon .fa-sun{
+    display: inline-block;
+  }
+}
+
+body:has(.nav-icon input:checked){
+  background-color: #202020;
+}
+

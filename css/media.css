@@ -1,0 +1,205 @@
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    padding-inline: 15px;
+  }
+}
+
+/* home section */
+
+@media screen and (min-width: 1200px) {
+  .home {
+    min-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home picture img {
+    width: 100%;
+  }
+
+  .home .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .home .container picture {
+    width: 100%;
+  }
+  .home .container .home-content {
+    width: 100%;
+    text-align: center;
+  }
+  .main-btns {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-btns {
+    flex-direction: column;
+  }
+}
+
+/* nav section */
+
+@media screen and (max-width: 1200px) {
+  .nav-icon .menu-icon {
+    display: inline-block;
+  }
+
+  nav .container ul {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    width: 30%;
+    transform: translateX(100%);
+    gap: 0;
+  }
+
+  nav .container ul li {
+    margin-block: 0.9375rem;
+  }
+
+  nav ul .close-icon {
+    display: block;
+    align-self: flex-end;
+    margin-right: 0.625rem;
+  }
+}
+
+/* chefs section */
+
+@media screen and (max-width: 992px) {
+  .chefs-items .chef-item {
+    width: calc((100% - var(--gap)) / 2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chefs-items .chef-item {
+    width: 100%;
+  }
+}
+
+/* gallery section */
+
+@media screen and (max-width: 1200px) {
+  .gallery-imgs {
+    height: 860px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .gallery-imgs picture {
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+
+  .pizza {
+    order: 1;
+  }
+  .Burger {
+    order: 2;
+  }
+  .Levitation-pizza {
+    order: 3;
+  }
+  .Frittata {
+    order: 4;
+  }
+  .Beef-steaks {
+    order: 5;
+  }
+  .Chicken {
+    order: 6;
+  }
+  .kebab {
+    order: 7;
+  }
+  .gallery-imgs {
+    height: 1400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-imgs picture {
+    width: 100%;
+  }
+  .gallery-imgs {
+    height: auto;
+  }
+}
+
+/* contact section */
+
+@media screen and (max-width: 992px) {
+  .first-input input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .first-input input {
+    width: 100%;
+  }
+
+  .contact-means .contact-card {
+    width: 100%;
+  }
+}
+
+/* footer section */
+
+@media screen and (max-width: 1200px) {
+  footer .container .about,
+  footer .container .contact-details {
+    width: calc(calc(100% - var(--gap) * 2) / 2);
+    order: 1;
+  }
+
+  footer .container .Subscribe {
+    width: calc(100% - var(--gap) * 2);
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .container .about,
+  footer .container .contact-details,
+  footer .container .Subscribe {
+    width: 100%;
+    order: 1;
+  }
+}
